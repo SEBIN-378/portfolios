@@ -9,9 +9,9 @@
 
 <body>
 
-<!-- AUTH PAGE -->
+<!-- AUTH -->
 <div id="auth-container">
-  <div class="auth-card">
+  <div class="auth-card glass">
     <h2 id="auth-title">Login</h2>
 
     <input type="text" id="username" placeholder="Username">
@@ -19,13 +19,13 @@
 
     <button onclick="handleAuth()" id="auth-btn">Login</button>
 
-    <p onclick="toggleAuth()" id="toggle-text">
+    <p id="toggle-text" onclick="toggleAuth()">
       Don't have an account? Sign Up
     </p>
   </div>
 </div>
 
-<!-- MAIN PORTFOLIO -->
+<!-- MAIN CONTENT -->
 <div id="main-content">
 
   <!-- NAVBAR -->
@@ -40,22 +40,27 @@
   </nav>
 
   <!-- ABOUT -->
-  <img src="myphoto.jpg" alt="My Photo">
-  
-        <h1>Sebin Raju</h1>
-        <p>B.Tech Computer Science Student|Programmer|Tech Enthusiast</p>
+  <section id="about">
+    <div class="about-container">
+      <div class="profile-img"></div>
+      <div>
+        <h1>SEBIN RAJU</h1>
+        <p>I am a passionate web developer focused on creating modern, responsive, and visually engaging applications.</p>
+      </div>
+    </div>
+  </section>
 
   <!-- SKILLS -->
   <section id="skills">
     <h2>Skills & Experience</h2>
-    <div class="card">React</div>
-<div class="card">Node.js</div>
-<div class="card">Python</div>
-<div class="card">MongoDB</div>
+    <div class="skills-grid">
+      <div class="card">HTML</div>
+      <div class="card">CSS</div>
+      <div class="card">JavaScript</div>
       <div class="card">React</div>
       <div class="card">Node.js</div>
-      <div class="card">Projects</div>
-    <div class="card">Portfolio Website</div>
+      <div class="card">UI/UX</div>
+    </div>
   </section>
 
   <!-- CONTACT -->
@@ -63,9 +68,9 @@
     <h2>Contact Me</h2>
 
     <form onsubmit="sendMessage(event)">
-      <input type="email" placeholder="Enter your email">
-<textarea placeholder="Type your message here"></textarea>
-      <button type="submit">Submit</button>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
     </form>
   </section>
 
