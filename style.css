@@ -255,3 +255,26 @@ section h3 {
   transform: translateY(-8px);
   box-shadow: 0 0 20px #ff00c8;
 }
+
+/* PROJECT BUTTONS */
+.project-buttons {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.project-buttons a {
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+  color: #fff;
+  background: linear-gradient(45deg, #00f7ff, #ff00c8);
+  transition: 0.3s;
+}
+
+.project-buttons a:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #00f7ff;
+}
