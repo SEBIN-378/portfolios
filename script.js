@@ -49,6 +49,4 @@ function sendMessage(e) {
   e.preventDefault();
   alert("Message sent successfully!");
 }
-window.onload = function () {
-  loginSuccess();
-};
+
