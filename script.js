@@ -49,25 +49,6 @@ function sendMessage(e) {
   e.preventDefault();
   alert("Message sent successfully!");
 }
-window.addEventListener("load", function () {
-
-  if (window.location.hash && window.location.hash.length > 1) {
-    
-    // Delay execution slightly
-    setTimeout(() => {
-      loginSuccess();
-
-      // Scroll again after showing portfolio
-      document.querySelector(window.location.hash)?.scrollIntoView({
-        behavior: "smooth"
-      });
-
-    }, 100);
-
-  }
-
-  else if (localStorage.getItem("user")) {
-    loginSuccess();
-  }
-
-});
+window.onload = function () {
+  loginSuccess();
+};
