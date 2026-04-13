@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- AUTH PAGE -->
+<div id="auth-container">
+  <div class="auth-card">
+    <h2 id="auth-title">Login</h2>
+
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
+
+    <button onclick="handleAuth()" id="auth-btn">Login</button>
+
+    <p onclick="toggleAuth()" id="toggle-text">
+      Don't have an account? Sign Up
+    </p>
+  </div>
+</div>
+
+<!-- MAIN PORTFOLIO -->
+<div id="main-content">
+
+  <!-- NAVBAR -->
+  <nav>
+    <h2>My Portfolio</h2>
+    <div>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+      <a href="#" onclick="logout()">Logout</a>
+    </div>
+  </nav>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="about-container">
+      <div class="profile-img"></div>
+      <div>
+        <h1>Your Name</h1>
+        <p>Your professional bio goes here. Describe yourself, your passion, and your career goals.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <h2>Skills & Experience</h2>
+    <div class="skills-grid">
+      <div class="card">HTML</div>
+      <div class="card">CSS</div>
+      <div class="card">JavaScript</div>
+      <div class="card">React</div>
+      <div class="card">Node.js</div>
+      <div class="card">Projects</div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+
+    <form onsubmit="sendMessage(event)">
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Connect with me</p>
+    <div class="social">
+      <a href="https://github.com/SEBIN-378" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/sebin-raju-15b585389" target="_blank">LinkedIn</a>
+    </div>
+  </footer>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

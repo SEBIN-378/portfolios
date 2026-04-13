@@ -1,0 +1,155 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #000;
+  color: #fff;
+}
+
+/* AUTH */
+#auth-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth-card {
+  background: #111;
+  padding: 30px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+  border: 1px solid #fff;
+}
+
+.auth-card input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  outline: none;
+}
+
+.auth-card button {
+  width: 100%;
+  padding: 10px;
+  background: #fff;
+  color: #000;
+  border: none;
+  cursor: pointer;
+}
+
+#toggle-text {
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* MAIN CONTENT */
+#main-content {
+  display: none;
+}
+
+/* NAVBAR */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  border-bottom: 1px solid #fff;
+  position: sticky;
+  top: 0;
+  background: #000;
+}
+
+nav a {
+  margin-left: 15px;
+  text-decoration: none;
+  color: #fff;
+}
+
+/* SECTIONS */
+section {
+  padding: 60px 20px;
+}
+
+/* ABOUT */
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  background: #fff;
+  border-radius: 50%;
+}
+
+/* SKILLS */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.card {
+  padding: 20px;
+  border: 1px solid #fff;
+  text-align: center;
+}
+
+/* CONTACT */
+form {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+form input, form textarea {
+  margin: 10px 0;
+  padding: 10px;
+  border: none;
+}
+
+form button {
+  padding: 10px;
+  background: #fff;
+  color: #000;
+  border: none;
+  cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid #fff;
+}
+
+.social a {
+  margin: 0 10px;
+  color: #fff;
+}
+
+/* RESPONSIVE */
+@media(max-width: 600px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* SMOOTH SCROLL */
+html {
+  scroll-behavior: smooth;
+}
