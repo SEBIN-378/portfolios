@@ -1,6 +1,6 @@
 let isLogin = true;
 
-// TOGGLE LOGIN / SIGNUP
+// TOGGLE LOGIN/SIGNUP
 function toggleAuth() {
   isLogin = !isLogin;
 
@@ -10,7 +10,7 @@ function toggleAuth() {
     isLogin ? "Don't have an account? Sign Up" : "Already have an account? Login";
 }
 
-// HANDLE AUTH
+// AUTH LOGIC
 function handleAuth() {
   let user = document.getElementById("username").value;
   let pass = document.getElementById("password").value;
@@ -49,11 +49,3 @@ function sendMessage(e) {
   e.preventDefault();
   alert("Message sent successfully!");
 }
-
-// AUTO LOGIN (OPTIONAL)
-window.onload = function () {
-  if (localStorage.getItem("user")) {
-    // Uncomment below to auto-login
-    // loginSuccess();
-  }
-};
