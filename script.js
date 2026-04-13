@@ -49,18 +49,3 @@ function sendMessage(e) {
   e.preventDefault();
   alert("Message sent successfully!");
 }
-window.onload = function () {
-
-  // If URL has a section (like #about, #projects, etc.)
-  if (window.location.hash !== "") {
-    loginSuccess(); // skip login
-  }
-
-  // Otherwise check normal login
-  else if (localStorage.getItem("user")) {
-    loginSuccess();
-  }
-
-  // Else → stay on login page
-};
-inS
