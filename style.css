@@ -214,3 +214,10 @@ section h2,
 section h3 {
   margin-bottom: 12px; /* small space after headings */
 }
+
+#intro,
+#about,
+#skills,
+#contact {
+  margin-bottom: 40px; /* slight space between sections */
+}
