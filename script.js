@@ -49,3 +49,14 @@ function sendMessage(e) {
   e.preventDefault();
   alert("Message sent successfully!");
 }
+// AUTO LOGIN IF LINK HAS #about
+window.onload = function () {
+
+  if (window.location.hash) {
+    loginSuccess(); // skip login when opened from project link
+  }
+
+  else if (localStorage.getItem("user")) {
+    loginSuccess(); // normal login
+  }
+};
