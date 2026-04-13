@@ -75,6 +75,20 @@ nav {
   background: rgba(0,0,0,0.4);
 }
 
+.profile-img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba(255,255,255,0.3);
+  box-shadow: 0 0 25px #00f7ff, 0 0 40px #ff00c8;
+  transition: 0.3s;
+}
+
+.profile-img:hover {
+  transform: scale(1.05);
+}
+
 nav a {
   margin-left: 20px;
   text-decoration: none;
