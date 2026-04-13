@@ -144,3 +144,50 @@ footer {
 html {
   scroll-behavior: smooth;
 }
+/* INTRO SECTION */
+#intro {
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro-container {
+  text-align: center;
+  padding: 40px;
+  max-width: 700px;
+}
+
+.intro-container h1 {
+  font-size: 32px;
+  color: #00f7ff;
+  margin-bottom: 10px;
+}
+
+.intro-container h2 {
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+
+.intro-container p {
+  color: #e0e0e0;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* BUTTONS */
+.intro-buttons a {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 18px;
+  border-radius: 25px;
+  text-decoration: none;
+  color: #fff;
+  background: linear-gradient(45deg, #00f7ff, #ff00c8);
+  transition: 0.3s;
+}
+
+.intro-buttons a:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #00f7ff;
+}
