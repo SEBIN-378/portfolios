@@ -49,15 +49,23 @@ function sendMessage(e) {
   e.preventDefault();
   alert("Message sent successfully!");
 }
-
 window.addEventListener("load", function () {
 
-  // Check if URL has a section like #about, #projects, etc.
   if (window.location.hash && window.location.hash.length > 1) {
-    loginSuccess();
+    
+    // Delay execution slightly
+    setTimeout(() => {
+      loginSuccess();
+
+      // Scroll again after showing portfolio
+      document.querySelector(window.location.hash)?.scrollIntoView({
+        behavior: "smooth"
+      });
+
+    }, 100);
+
   }
 
-  // Normal login if user already signed in
   else if (localStorage.getItem("user")) {
     loginSuccess();
   }
