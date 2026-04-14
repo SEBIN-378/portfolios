@@ -482,3 +482,10 @@ html {
 #toggle-text:hover .highlight {
   color: #00c3ff;
 }
+
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
