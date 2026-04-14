@@ -1,5 +1,15 @@
 let isLogin = true;
 
+const quotes = [
+  "Code is like humor. When you have to explain it, it’s bad.",
+  "First, solve the problem. Then, write the code.",
+  "Programs must be written for people to read.",
+  "Experience is the name everyone gives to their mistakes.",
+  "Fix the cause, not the symptom.",
+  "Simplicity is the soul of efficiency.",
+  "Great developers never stop learning."
+];
+
 function showQuote() {
   const quoteText = document.getElementById("quote");
 
@@ -11,6 +21,8 @@ function showQuote() {
     quoteText.style.opacity = 1;
   }, 300);
 }
+
+setInterval(showQuote, 4000); // changes every 4 sec
 
 // TOGGLE LOGIN/SIGNUP
 function toggleAuth() {
@@ -83,3 +95,5 @@ function loginSuccess() {
   let user = localStorage.getItem("user");
   document.getElementById("welcome-text").innerText = "Welcome, " + user;
 }
+
+showQuote();
