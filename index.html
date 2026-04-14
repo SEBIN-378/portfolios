@@ -10,6 +10,23 @@
 
 <body>
 
+  <body>
+
+  <!-- LOGIN PAGE -->
+  <div id="loginPage">
+    <h2>Login</h2>
+    <input type="text" id="username" placeholder="Username"><br><br>
+    <input type="password" id="password" placeholder="Password"><br><br>
+    <button onclick="login()">Login</button>
+  </div>
+
+  <!-- PORTFOLIO PAGE (HIDDEN INITIALLY) -->
+  <div id="portfolioPage" style="display: none;">
+    <h1>Welcome to My Portfolio</h1>
+    <p>Your portfolio content goes here...</p>
+  </div>
+
+
 <!-- AUTH -->
 <div id="auth-container">
   <div class="auth-card glass">
@@ -160,5 +177,22 @@
 </div>
 
 <script src="script.js"></script>
+
+      <script>
+    function login() {
+      const username = document.getElementById("username").value;
+      const password = document.getElementById("password").value;
+
+      if (username === "admin" && password === "1234") {
+        document.getElementById("loginPage").style.display = "none";
+        document.getElementById("portfolioPage").style.display = "block";
+      } else {
+        alert("Invalid login");
+      }
+    }
+  </script>
+
+</body>
+  
 </body>
 </html>
