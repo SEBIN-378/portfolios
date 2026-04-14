@@ -472,3 +472,13 @@ html {
   color: #fff;
   text-decoration: underline;
 }
+
+.highlight {
+  font-family: 'Orbitron', sans-serif;
+  color: #00f7ff;
+  font-weight: bold;
+}
+
+#toggle-text:hover .highlight {
+  color: #00c3ff;
+}
