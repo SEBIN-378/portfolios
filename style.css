@@ -336,3 +336,59 @@ section h3 {
   transform: scale(1.05);
   box-shadow: 0 0 15px #ff00c8;
 }
+html {
+  scroll-behavior: smooth;
+}* 
+{
+  transition: all 0.25s ease-in-out;
+}
+body {
+  background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364, #1a1a2e);
+  background-size: 400% 400%;
+  animation: gradientFlow 15s ease infinite;
+  color: #fff;
+}
+
+@keyframes gradientFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.glass {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 18px rgba(0, 247, 255, 0.4);
+}
+button,
+.project-buttons a {
+  transition: all 0.25s ease;
+}
+
+button:hover,
+.project-buttons a:hover {
+  transform: scale(1.05);
+}
+#main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+/* FADE IN BASE STATE */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+
+/* WHEN VISIBLE */
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
