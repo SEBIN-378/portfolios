@@ -1,5 +1,17 @@
 let isLogin = true;
 
+function showQuote() {
+  const quoteText = document.getElementById("quote");
+
+  quoteText.style.opacity = 0;
+
+  setTimeout(() => {
+    const randomIndex = Math.floor(Math.random() * quotes.length);
+    quoteText.innerText = quotes[randomIndex];
+    quoteText.style.opacity = 1;
+  }, 300);
+}
+
 // TOGGLE LOGIN/SIGNUP
 function toggleAuth() {
   isLogin = !isLogin;
