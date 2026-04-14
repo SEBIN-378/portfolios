@@ -36,23 +36,19 @@ function toggleAuth() {
 
 // AUTH LOGIC
 function handleAuth() {
-  let user = document.getElementById("username").value;
-  let pass = document.getElementById("password").value;
+  const username = document.querySelector("#auth-container #username").value;
+  const password = document.querySelector("#auth-container #password").value;
 
-  if (isLogin) {
-    let storedUser = localStorage.getItem("user");
-    let storedPass = localStorage.getItem("pass");
+  if (username === "admin" && password === "1234") {
 
-    if (user === storedUser && pass === storedPass) {
-      loginSuccess();
-    } else {
-      alert("Invalid credentials");
-    }
+    // Hide login
+    document.getElementById("auth-container").style.display = "none";
+
+    // Show portfolio
+    document.getElementById("main-content").style.display = "block";
+
   } else {
-    localStorage.setItem("user", user);
-    localStorage.setItem("pass", pass);
-    alert("Account created! Please login.");
-    toggleAuth();
+    alert("Invalid login");
   }
 }
 
