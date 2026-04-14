@@ -446,3 +446,15 @@ html {
   opacity: 1;
   transform: translateY(0);
 }
+
+.quote-text {
+  margin-top: 15px;
+  font-style: italic;
+  font-size: 14px;
+  color: #ccc;
+  text-align: center;
+  opacity: 0.8;
+}
+.quote-text {
+  transition: opacity 0.5s ease;
+}
