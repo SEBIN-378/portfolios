@@ -63,3 +63,11 @@ const observer = new IntersectionObserver(entries => {
 });
 
 elements.forEach(el => observer.observe(el));
+
+function loginSuccess() {
+  document.getElementById("auth-container").style.display = "none";
+  document.getElementById("main-content").style.display = "block";
+
+  let user = localStorage.getItem("user");
+  document.getElementById("welcome-text").innerText = "Welcome, " + user;
+}
